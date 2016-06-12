@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="styles/application.css">
+    <link rel="stylesheet" type="text/css" href="jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.min.css">
+    <title>Chating room</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+
+
+    <script>
+        System.import('app/bootstrap').catch(console.error.bind(console));
+    </script>
+</head>
+<body>
+<!--<p>index page test test</p>-->
+<header></header>
+<!-- ANGULAR DYNAMIC CONTENT -->
+<div ng-view></div>
+
+<footer></footer>
+
+
+</body>
+</html>

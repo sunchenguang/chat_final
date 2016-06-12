@@ -1,0 +1,14 @@
+<div class="form-container">
+    <h1>添加房间</h1>
+    <div class="alert" ng-class="success ? 'alert-success' : 'alert-danger'" role="alert" ng-bind="err_msg" ng-show="has_err"></div>
+    <form method="post">
+        <div class="form-group">
+            <label for="room_name">房间名</label>
+            <input type="text" id="room_name" class="form-control" ng-model="room_name"/>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="register()">添加</button>
+        </div>
+    </form>
+</div>
